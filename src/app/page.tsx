@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import MapContainer from "./components/MapContainer";
 import ServerMap from "./components/ServerMap";
 

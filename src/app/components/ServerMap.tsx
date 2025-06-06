@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface ServerMapProps {
   className?: string;
 }
@@ -39,10 +41,11 @@ export default async function ServerMap({ className }: ServerMapProps) {
   return (
     <div className={className || "w-full h-[600px] relative"}>
       {initialTile && (
-        <img
+        <Image
           src={initialTile}
           alt="Initial map tile"
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
         />
       )}
       <div id="map" className="absolute inset-0" />
